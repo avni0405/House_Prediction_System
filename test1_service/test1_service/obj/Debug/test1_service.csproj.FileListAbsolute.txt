@@ -1,0 +1,11 @@
+C:\Users\avina\source\repos\test1_service\test1_service\bin\MLModel.zip
+C:\Users\avina\source\repos\test1_service\test1_service\bin\test1_service.dll.config
+C:\Users\avina\source\repos\test1_service\test1_service\bin\test1_service.dll
+C:\Users\avina\source\repos\test1_service\test1_service\bin\test1_service.pdb
+C:\Users\avina\source\repos\test1_service\test1_service\bin\test1_serviceML.Model.dll
+C:\Users\avina\source\repos\test1_service\test1_service\bin\test1_serviceML.Model.pdb
+C:\Users\avina\source\repos\test1_service\test1_service\obj\Debug\test1_service.csprojAssemblyReference.cache
+C:\Users\avina\source\repos\test1_service\test1_service\obj\Debug\test1_service.csproj.CoreCompileInputs.cache
+C:\Users\avina\source\repos\test1_service\test1_service\obj\Debug\test1_service.csproj.CopyComplete
+C:\Users\avina\source\repos\test1_service\test1_service\obj\Debug\test1_service.dll
+C:\Users\avina\source\repos\test1_service\test1_service\obj\Debug\test1_service.pdb
