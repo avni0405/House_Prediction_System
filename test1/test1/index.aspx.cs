@@ -38,7 +38,7 @@ namespace test1
             d.SellPrice = float.Parse(t13.Text);
             d.TotRmsAbvGrd = float.Parse(t14.Text);
             float re = se.predict_value(d);
-            Label1.Text = re.ToString();
+            Label1.Text = "Predicted value"+re.ToString();
 
 
         }

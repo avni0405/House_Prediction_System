@@ -29,11 +29,11 @@
           "lib/netstandard1.3/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.ML/1.5.0-preview": {
+      "Microsoft.ML/1.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ML.CpuMath": "1.5.0-preview",
-          "Microsoft.ML.DataView": "1.5.0-preview",
+          "Microsoft.ML.CpuMath": "1.0.0",
+          "Microsoft.ML.DataView": "1.0.0",
           "Newtonsoft.Json": "10.0.3",
           "System.CodeDom": "4.4.0",
           "System.Collections.Immutable": "1.5.0",
@@ -62,17 +62,33 @@
           "build/netstandard2.0/Microsoft.ML.targets": {}
         },
         "runtimeTargets": {
+          "runtimes/linux-x64/native/libFactorizationMachineNative.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
           "runtimes/linux-x64/native/libLdaNative.so": {
             "assetType": "native",
             "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libFactorizationMachineNative.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
           },
           "runtimes/osx-x64/native/libLdaNative.dylib": {
             "assetType": "native",
             "rid": "osx-x64"
           },
+          "runtimes/win-x64/native/FactorizationMachineNative.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
           "runtimes/win-x64/native/LdaNative.dll": {
             "assetType": "native",
             "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/FactorizationMachineNative.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
           },
           "runtimes/win-x86/native/LdaNative.dll": {
             "assetType": "native",
@@ -80,7 +96,7 @@
           }
         }
       },
-      "Microsoft.ML.CpuMath/1.5.0-preview": {
+      "Microsoft.ML.CpuMath/1.0.0": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.1"
@@ -95,25 +111,25 @@
           "build/netstandard2.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/linux-x64/nativeassets/netstandard2.0/libCpuMathNative.so": {
+          "runtimes/linux-x64/native/libCpuMathNative.so": {
             "assetType": "native",
             "rid": "linux-x64"
           },
-          "runtimes/osx-x64/nativeassets/netstandard2.0/libCpuMathNative.dylib": {
+          "runtimes/osx-x64/native/libCpuMathNative.dylib": {
             "assetType": "native",
             "rid": "osx-x64"
           },
-          "runtimes/win-x64/nativeassets/netstandard2.0/CpuMathNative.dll": {
+          "runtimes/win-x64/native/CpuMathNative.dll": {
             "assetType": "native",
             "rid": "win-x64"
           },
-          "runtimes/win-x86/nativeassets/netstandard2.0/CpuMathNative.dll": {
+          "runtimes/win-x86/native/CpuMathNative.dll": {
             "assetType": "native",
             "rid": "win-x86"
           }
         }
       },
-      "Microsoft.ML.DataView/1.5.0-preview": {
+      "Microsoft.ML.DataView/1.0.0": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.1"
@@ -125,10 +141,10 @@
           "lib/netstandard2.0/Microsoft.ML.DataView.dll": {}
         }
       },
-      "Microsoft.ML.FastTree/1.5.0-preview": {
+      "Microsoft.ML.FastTree/1.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.ML": "1.5.0-preview"
+          "Microsoft.ML": "1.0.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.ML.FastTree.dll": {}
@@ -915,15 +931,16 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.ML/1.5.0-preview": {
-      "sha512": "CuwGu6mocVV2HpsrAZi2Ls515uS0EaQsjvWdT1fkB0G1WU9+WIkkrGnO04IW/G9X7cfRawPtFCBFICLBUOGSXQ==",
+    "Microsoft.ML/1.0.0": {
+      "sha512": "1Wq/LN3M6jn16sJhpXsDA6NMY5ZTqOeKFer8RenW+5nmOlEfyoqYVhk0CBN37+vX1j3ZQNAqof8Ev2sTKvbb2w==",
       "type": "package",
-      "path": "microsoft.ml/1.5.0-preview",
+      "path": "microsoft.ml/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/Microsoft.ML.Analyzer.dll",
         "build/netstandard2.0/Microsoft.ML.props",
         "build/netstandard2.0/Microsoft.ML.targets",
         "lib/netstandard2.0/Microsoft.ML.Core.dll",
@@ -938,46 +955,42 @@
         "lib/netstandard2.0/Microsoft.ML.StandardTrainers.xml",
         "lib/netstandard2.0/Microsoft.ML.Transforms.dll",
         "lib/netstandard2.0/Microsoft.ML.Transforms.xml",
-        "microsoft.ml.1.5.0-preview.nupkg.sha512",
+        "microsoft.ml.1.0.0.nupkg.sha512",
         "microsoft.ml.nuspec",
-        "mlnetlogo.png",
+        "runtimes/linux-x64/native/libFactorizationMachineNative.so",
         "runtimes/linux-x64/native/libLdaNative.so",
+        "runtimes/osx-x64/native/libFactorizationMachineNative.dylib",
         "runtimes/osx-x64/native/libLdaNative.dylib",
+        "runtimes/win-x64/native/FactorizationMachineNative.dll",
         "runtimes/win-x64/native/LdaNative.dll",
+        "runtimes/win-x86/native/FactorizationMachineNative.dll",
         "runtimes/win-x86/native/LdaNative.dll"
       ]
     },
-    "Microsoft.ML.CpuMath/1.5.0-preview": {
-      "sha512": "nuk9+ZLSPmdjvaYpYInjZphENBSqYv0KweZvNUzf+S3hH2AYU4ZrIvcPoB0L9qN2fHwpzadaiij76fbylA0vLw==",
+    "Microsoft.ML.CpuMath/1.0.0": {
+      "sha512": "zH1DVSXcqO9lnp96dSxWo17765FuHiN49Sqk13DGr+2B0Etceg6qOPftjeydDO6m2J72RxpX/rTFKriqJLOUOg==",
       "type": "package",
-      "path": "microsoft.ml.cpumath/1.5.0-preview",
+      "path": "microsoft.ml.cpumath/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/Microsoft.ML.CpuMath.props",
-        "lib/netcoreapp3.0/Microsoft.ML.CpuMath.dll",
-        "lib/netcoreapp3.0/Microsoft.ML.CpuMath.xml",
         "lib/netstandard2.0/Microsoft.ML.CpuMath.dll",
         "lib/netstandard2.0/Microsoft.ML.CpuMath.xml",
-        "microsoft.ml.cpumath.1.5.0-preview.nupkg.sha512",
+        "microsoft.ml.cpumath.1.0.0.nupkg.sha512",
         "microsoft.ml.cpumath.nuspec",
-        "mlnetlogo.png",
-        "runtimes/linux-x64/nativeassets/netcoreapp3.0/_._",
-        "runtimes/linux-x64/nativeassets/netstandard2.0/libCpuMathNative.so",
-        "runtimes/osx-x64/nativeassets/netcoreapp3.0/_._",
-        "runtimes/osx-x64/nativeassets/netstandard2.0/libCpuMathNative.dylib",
-        "runtimes/win-x64/nativeassets/netcoreapp3.0/_._",
-        "runtimes/win-x64/nativeassets/netstandard2.0/CpuMathNative.dll",
-        "runtimes/win-x86/nativeassets/netcoreapp3.0/_._",
-        "runtimes/win-x86/nativeassets/netstandard2.0/CpuMathNative.dll"
+        "runtimes/linux-x64/native/libCpuMathNative.so",
+        "runtimes/osx-x64/native/libCpuMathNative.dylib",
+        "runtimes/win-x64/native/CpuMathNative.dll",
+        "runtimes/win-x86/native/CpuMathNative.dll"
       ]
     },
-    "Microsoft.ML.DataView/1.5.0-preview": {
-      "sha512": "X9YmVQxPdchIYpYrsL1sO7mgJ5ndECX7kmuDrzZl67jFVdQ6L7viDMNt7FNxPJ9+MLN7qM/ZKj6BaVtc9J3CxQ==",
+    "Microsoft.ML.DataView/1.0.0": {
+      "sha512": "yJ7L0DVZPTTS7CyqYICXJ1QrOYHxeayqG1oJK8lg4TYu0I+lKWQgJiPzxhcJaAluuF9CobpSoZlgox0B5alqng==",
       "type": "package",
-      "path": "microsoft.ml.dataview/1.5.0-preview",
+      "path": "microsoft.ml.dataview/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -985,15 +998,14 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard2.0/Microsoft.ML.DataView.dll",
         "lib/netstandard2.0/Microsoft.ML.DataView.xml",
-        "microsoft.ml.dataview.1.5.0-preview.nupkg.sha512",
-        "microsoft.ml.dataview.nuspec",
-        "mlnetlogo.png"
+        "microsoft.ml.dataview.1.0.0.nupkg.sha512",
+        "microsoft.ml.dataview.nuspec"
       ]
     },
-    "Microsoft.ML.FastTree/1.5.0-preview": {
-      "sha512": "5450J5BfOqgjID33kNjkuQwoqiQUnloSY2EASIAkhnQgJRkiQeD0efWLzgrZ3OPllmrMaX+HFRdcieJ6vVHSxg==",
+    "Microsoft.ML.FastTree/1.0.0": {
+      "sha512": "WsKlw00JIBkXrY0Q8WlUD7P79smhsnvGfRYqYSMUSx3AokINaXGhfmJkzdf1TrRrWHL4j6t5O4vO+AU7xrJnww==",
       "type": "package",
-      "path": "microsoft.ml.fasttree/1.5.0-preview",
+      "path": "microsoft.ml.fasttree/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1002,9 +1014,8 @@
         "build/netstandard2.0/Microsoft.ML.FastTree.props",
         "lib/netstandard2.0/Microsoft.ML.FastTree.dll",
         "lib/netstandard2.0/Microsoft.ML.FastTree.xml",
-        "microsoft.ml.fasttree.1.5.0-preview.nupkg.sha512",
+        "microsoft.ml.fasttree.1.0.0.nupkg.sha512",
         "microsoft.ml.fasttree.nuspec",
-        "mlnetlogo.png",
         "runtimes/linux-x64/native/libFastTreeNative.so",
         "runtimes/osx-x64/native/libFastTreeNative.dylib",
         "runtimes/win-x64/native/FastTreeNative.dll",
@@ -3646,8 +3657,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Microsoft.ML >= 1.5.0-preview",
-      "Microsoft.ML.FastTree >= 1.5.0-preview",
+      "Microsoft.ML >= 1.0.0",
+      "Microsoft.ML.FastTree >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -3690,11 +3701,11 @@
         "dependencies": {
           "Microsoft.ML": {
             "target": "Package",
-            "version": "[1.5.0-preview, )"
+            "version": "[1.0.0, )"
           },
           "Microsoft.ML.FastTree": {
             "target": "Package",
-            "version": "[1.5.0-preview, )"
+            "version": "[1.0.0, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

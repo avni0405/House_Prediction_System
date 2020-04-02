@@ -35,7 +35,8 @@ namespace test1_service
             ml.TotRmsAbvGrd = d.TotRmsAbvGrd;
             ml.SalePrice = d.SellPrice;
             ConsumeModel c = new ConsumeModel();
-           var p= ConsumeModel.Predict(ml);
+     
+            var p= ConsumeModel.Predict(ml);
             var re = p.Score;
             return re;
             

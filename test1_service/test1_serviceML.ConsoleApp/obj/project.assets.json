@@ -993,8 +993,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.ML": "1.5.0-preview",
-          "Microsoft.ML.FastTree": "1.5.0-preview"
+          "Microsoft.ML": "1.0.0",
+          "Microsoft.ML.FastTree": "1.0.0"
         },
         "compile": {
           "bin/placeholder/test1_serviceML.Model.dll": {}
