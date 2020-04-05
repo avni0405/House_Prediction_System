@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HouseDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="House">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="squarefeet" Type="bigint" />
+          <Property Name="address" Type="varchar" MaxLength="500" />
+          <Property Name="pincode" Type="varchar" MaxLength="10" />
+          <Property Name="state" Type="varchar" MaxLength="50" />
+          <Property Name="city" Type="varchar" MaxLength="50" />
+          <Property Name="builtyear" Type="int" />
+          <Property Name="bedroom" Type="int" />
+          <Property Name="kitchen" Type="int" />
+          <Property Name="bathrrom" Type="int" />
+          <Property Name="image" Type="varchar" MaxLength="500" />
+          <Property Name="isoffer" Type="int" />
+          <Property Name="contactno" Type="varchar" MaxLength="50" />
+          <Property Name="price" Type="float" />
+        </EntityType>
+        <EntityContainer Name="HouseDBModelStoreContainer">
+          <EntitySet Name="House" EntityType="Self.House" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HouseDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="House">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="squarefeet" Type="Int64" />
+          <Property Name="address" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="pincode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="state" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="builtyear" Type="Int32" />
+          <Property Name="bedroom" Type="Int32" />
+          <Property Name="kitchen" Type="Int32" />
+          <Property Name="bathrrom" Type="Int32" />
+          <Property Name="image" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="isoffer" Type="Int32" />
+          <Property Name="contactno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="price" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="HouseDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Houses" EntityType="Self.House" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HouseDBModelStoreContainer" CdmEntityContainer="HouseDBEntities">
+          <EntitySetMapping Name="Houses">
+            <EntityTypeMapping TypeName="HouseDBModel.House">
+              <MappingFragment StoreEntitySet="House">
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="contactno" ColumnName="contactno" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="squarefeet" ColumnName="squarefeet" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="pincode" ColumnName="pincode" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="builtyear" ColumnName="builtyear" />
+                <ScalarProperty Name="bedroom" ColumnName="bedroom" />
+                <ScalarProperty Name="kitchen" ColumnName="kitchen" />
+                <ScalarProperty Name="bathrrom" ColumnName="bathrrom" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="isoffer" ColumnName="isoffer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

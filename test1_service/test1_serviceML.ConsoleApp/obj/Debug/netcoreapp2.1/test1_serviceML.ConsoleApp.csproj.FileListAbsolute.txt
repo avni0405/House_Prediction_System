@@ -1,0 +1,14 @@
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\MLModel.zip
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.deps.json
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.runtimeconfig.json
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.runtimeconfig.dev.json
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.dll
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.pdb
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.Model.dll
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.Model.pdb
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.AssemblyInfo.cs
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.csproj.CopyComplete
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.dll
+C:\Users\sachi\Desktop\damnit\House_Prediction_System-master\test1_service\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.pdb
