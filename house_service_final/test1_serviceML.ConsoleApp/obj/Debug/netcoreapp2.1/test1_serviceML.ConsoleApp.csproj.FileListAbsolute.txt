@@ -1,0 +1,16 @@
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\MLModel.zip
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.deps.json
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.runtimeconfig.json
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.runtimeconfig.dev.json
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.dll
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.pdb
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.Model.dll
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\bin\Debug\netcoreapp2.1\test1_serviceML.Model.pdb
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.AssemblyInfo.cs
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.csproj.CopyComplete
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.dll
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.pdb
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.ConsoleApp\obj\Debug\netcoreapp2.1\test1_serviceML.ConsoleApp.genruntimeconfig.cache
