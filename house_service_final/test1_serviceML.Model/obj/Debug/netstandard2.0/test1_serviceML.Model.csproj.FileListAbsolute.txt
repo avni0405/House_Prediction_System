@@ -1,0 +1,29 @@
+C:\Users\avina\source\repos\test1_service\test1_serviceML.Model\bin\Debug\netstandard2.0\MLModel.zip
+C:\Users\avina\source\repos\test1_service\test1_serviceML.Model\bin\Debug\netstandard2.0\test1_serviceML.Model.deps.json
+C:\Users\avina\source\repos\test1_service\test1_serviceML.Model\bin\Debug\netstandard2.0\test1_serviceML.Model.dll
+C:\Users\avina\source\repos\test1_service\test1_serviceML.Model\bin\Debug\netstandard2.0\test1_serviceML.Model.pdb
+C:\Users\avina\source\repos\test1_service\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.csprojAssemblyReference.cache
+C:\Users\avina\source\repos\test1_service\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.AssemblyInfoInputs.cache
+C:\Users\avina\source\repos\test1_service\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.AssemblyInfo.cs
+C:\Users\avina\source\repos\test1_service\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.dll
+C:\Users\avina\source\repos\test1_service\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.pdb
+C:\Users\avina\source\repos\test1_service\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.csproj.CoreCompileInputs.cache
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.Model\bin\Debug\netstandard2.0\MLModel.zip
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.Model\bin\Debug\netstandard2.0\test1_serviceML.Model.deps.json
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.Model\bin\Debug\netstandard2.0\test1_serviceML.Model.dll
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.Model\bin\Debug\netstandard2.0\test1_serviceML.Model.pdb
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.csprojAssemblyReference.cache
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.csproj.CoreCompileInputs.cache
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.AssemblyInfoInputs.cache
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.AssemblyInfo.cs
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.dll
+C:\Users\avina\source\repos\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.pdb
+S:\House_Prediction_System-master (4)\House_Prediction_System-master\house_service_final\test1_serviceML.Model\bin\Debug\netstandard2.0\MLModel.zip
+S:\House_Prediction_System-master (4)\House_Prediction_System-master\house_service_final\test1_serviceML.Model\bin\Debug\netstandard2.0\test1_serviceML.Model.deps.json
+S:\House_Prediction_System-master (4)\House_Prediction_System-master\house_service_final\test1_serviceML.Model\bin\Debug\netstandard2.0\test1_serviceML.Model.dll
+S:\House_Prediction_System-master (4)\House_Prediction_System-master\house_service_final\test1_serviceML.Model\bin\Debug\netstandard2.0\test1_serviceML.Model.pdb
+S:\House_Prediction_System-master (4)\House_Prediction_System-master\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.csprojAssemblyReference.cache
+S:\House_Prediction_System-master (4)\House_Prediction_System-master\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.AssemblyInfoInputs.cache
+S:\House_Prediction_System-master (4)\House_Prediction_System-master\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.AssemblyInfo.cs
+S:\House_Prediction_System-master (4)\House_Prediction_System-master\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.dll
+S:\House_Prediction_System-master (4)\House_Prediction_System-master\house_service_final\test1_serviceML.Model\obj\Debug\netstandard2.0\test1_serviceML.Model.pdb
