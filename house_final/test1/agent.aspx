@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-     <title>Uptown - Free Bootstrap 4 Template by Colorlib</title>
+     <title>Houseiva|Add Property</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -36,9 +36,9 @@
      
     
 	  
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Uptown</a>
+	      <a class="navbar-brand" href="index.html"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -46,12 +46,22 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="home.aspx" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.aspx" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="agent.aspx" class="nav-link">Agent</a></li>
-	          <li class="nav-item"><a href="services.aspx" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="properties.aspx" class="nav-link">Properties</a></li>
-	          <li class="nav-item"><a href="blog.aspx" class="nav-link">Blog</a></li>
+      
+	          
+	          <li class="nav-item"><a href="agent.aspx" class="nav-link">Add Property</a></li>
+	     
+	          <li class="nav-item"><a href="property.aspx" class="nav-link">Properties</a></li>
+	          <li class="nav-item"><a href="view_property.aspx" class="nav-link">Your Properties</a></li>
 	          <li class="nav-item"><a href="contact.aspx" class="nav-link">Contact</a></li>
+               
+                <% if (Session["user"] == null) { %>
+                     <li class="nav-item"><a href="login.aspx" class="nav-link">Login</a></li>
+                    <%} %>
+                 <%   else
+                                                       {%>
+                    <li class="nav-item"><a href="login.aspx" class="nav-link">Logout</a></li>
+                <%}%>
+               
 	        </ul>
 	      </div>
 	    </div>
@@ -63,8 +73,8 @@
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-3 bread">Agent</h1>
+          	<p class="breadcrumbs"><span class="mr-2"><a href="home.aspx">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-3 bread">Add Property</h1>
           </div>
         </div>
       </div>
@@ -162,12 +172,26 @@
                 <input type="text" class="form-control" name="t24" placeholder="Enter Bathtub">
               </div>
                  <div class="form-group">
-                <input type="text" class="form-control" name="t22" placeholder="Is offer">
+                   <select name="t22" class="form-control">
+                    <option>yes</option>
+                    <option>no</option>
+                </select>
               </div>
-                
+                <div class="form-group">
+                    Main House Image<asp:FileUpload id="img1" runat="server" />
+                </div>
+                <div class="form-group">
+                   Bedroom Image: <asp:FileUpload id="img2" runat="server" />
+                </div>
+                <div class="form-group">
+                   Kitchen Image <asp:FileUpload id="img3" runat="server" />
+                </div>
+                <div class="form-group">
+                  other image  <asp:FileUpload id="img4" runat="server" />
+                </div>
                 
               <div class="form-group">
-                <input type="submit" value="Send Message" id="click" runat="server" class="btn btn-primary py-3 px-5">
+                <input type="submit" value="Predict Price" id="click" runat="server" class="btn btn-primary py-3 px-5">
               </div>
             </form>
           
@@ -176,13 +200,12 @@
     
       </div>
     </section>
-
-    <footer class="ftco-footer ftco-section">
+ <footer class="ftco-footer ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Uptown</h2>
+              <h2 class="ftco-heading-2">Housevia</h2>
               <p>Far far away, behind the word mountains, far from the countries.</p>
               <ul class="ftco-footer-social list-unstyled mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -191,46 +214,17 @@
               </ul>
             </div>
           </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Community</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Search Properties</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>For Agents</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Reviews</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>FAQs</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">About Us</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Our Story</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Meet the team</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Careers</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Company</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About Us</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Press</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Careers</a></li>
-              </ul>
-            </div>
-          </div>
+          
+         
+          
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">103, sukun bunglows,Nadiad</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">9913558589</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope pr-4"></span><span class="text">housiva@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -240,7 +234,7 @@
           <div class="col-md-12 text-center">
 	
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  by <a href="#" >Housevia</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>

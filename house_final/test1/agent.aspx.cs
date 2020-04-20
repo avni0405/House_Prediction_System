@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -38,8 +39,8 @@ namespace test1
             d.FullBath = float.Parse(Request.Form["t14"]);
             d.BedroomAbvGr = float.Parse(Request.Form["t15"]);
             d.KitchenAbvGr = float.Parse(Request.Form["t16"]);
-            d.TotRmsAbvGrd = float.Parse(Request.Form["t17"]);
-            d.SellPrice = float.Parse(Request.Form["t18"]);
+            d.TotRmsAbvGrd = float.Parse(Request.Form["t18"]);
+            d.SellPrice = float.Parse(Request.Form["t17"]);
             float re = se.predict_value(d);
             HouseDetail h = new HouseDetail();
             h.City = Request.Form["t21"];
@@ -50,9 +51,75 @@ namespace test1
             h.Name = (Request.Form["t23"]);
             h.Bath = int.Parse(Request.Form["t24"]);
             h.ContactNo = Request.Form["t19"];
-            h.Price= float.Parse(Request.Form["t18"]);
-            h.IsOffer = bool.Parse(Request.Form["t22"]);
+            h.Price= re;
+            h.IsOffer = Request.Form["t22"];
             h.BuiltYear = int.Parse(Request.Form["t8"]);
+            Debug.Write(Session["user"].ToString());
+            h.Username = Session["user"].ToString();
+            if (img1.HasFile)
+            {
+                try
+                {
+                    string str = img1.FileName;
+                    img1.PostedFile.SaveAs(Server.MapPath("~/upload/" + str));
+                    string imgpath = "/upload/" + str.ToString();
+                    h.Image1 = imgpath;
+
+                }
+                catch (Exception ee)
+                {
+                    Debug.WriteLine(ee);
+                }
+
+            }
+            if (img2.HasFile)
+            {
+                try
+                {
+                    string str = img2.FileName;
+                    img2.PostedFile.SaveAs(Server.MapPath("~/upload/" + str));
+                    string imgpath = "/upload/" + str.ToString();
+                    h.Image2 = imgpath;
+
+                }
+                catch (Exception ee)
+                {
+                    Debug.WriteLine(ee);
+                }
+
+            }
+            if (img3.HasFile)
+            {
+                try
+                {
+                    string str = img3.FileName;
+                    img3.PostedFile.SaveAs(Server.MapPath("~/upload/" + str));
+                    string imgpath = "/upload/" + str.ToString();
+                    h.Image3 = imgpath;
+
+                }
+                catch (Exception ee)
+                {
+                    Debug.WriteLine(ee);
+                }
+
+            }
+            if (img4.HasFile)
+            {
+                try
+                {
+                    string str = img4.FileName;
+                    img4.PostedFile.SaveAs(Server.MapPath("~/upload/" + str));
+                    string imgpath = "/upload/" + str.ToString();
+                    h.Image4 = imgpath;
+
+                }
+                catch (Exception ee)
+                {
+                    Debug.WriteLine(ee);
+                }
+
+            }
             se.add_value(h);
 
 

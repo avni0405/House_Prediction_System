@@ -15,6 +15,83 @@ namespace test1.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="AgentDetail", Namespace="http://schemas.datacontract.org/2004/07/test1_service")]
+    [System.SerializableAttribute()]
+    public partial class AgentDetail : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ImageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UsernameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Count {
+            get {
+                return this.CountField;
+            }
+            set {
+                if ((this.CountField.Equals(value) != true)) {
+                    this.CountField = value;
+                    this.RaisePropertyChanged("Count");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Image {
+            get {
+                return this.ImageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ImageField, value) != true)) {
+                    this.ImageField = value;
+                    this.RaisePropertyChanged("Image");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Username {
+            get {
+                return this.UsernameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UsernameField, value) != true)) {
+                    this.UsernameField = value;
+                    this.RaisePropertyChanged("Username");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Details", Namespace="http://schemas.datacontract.org/2004/07/test1_service")]
     [System.SerializableAttribute()]
     public partial class Details : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -355,7 +432,22 @@ namespace test1.ServiceReference1 {
         private string ContactNoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool IsOfferField;
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Image1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Image2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Image3Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Image4Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IsOfferField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NameField;
@@ -371,6 +463,9 @@ namespace test1.ServiceReference1 {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string StateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UsernameField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -448,12 +543,77 @@ namespace test1.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool IsOffer {
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Image1 {
+            get {
+                return this.Image1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Image1Field, value) != true)) {
+                    this.Image1Field = value;
+                    this.RaisePropertyChanged("Image1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Image2 {
+            get {
+                return this.Image2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Image2Field, value) != true)) {
+                    this.Image2Field = value;
+                    this.RaisePropertyChanged("Image2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Image3 {
+            get {
+                return this.Image3Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Image3Field, value) != true)) {
+                    this.Image3Field = value;
+                    this.RaisePropertyChanged("Image3");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Image4 {
+            get {
+                return this.Image4Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Image4Field, value) != true)) {
+                    this.Image4Field = value;
+                    this.RaisePropertyChanged("Image4");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IsOffer {
             get {
                 return this.IsOfferField;
             }
             set {
-                if ((this.IsOfferField.Equals(value) != true)) {
+                if ((object.ReferenceEquals(this.IsOfferField, value) != true)) {
                     this.IsOfferField = value;
                     this.RaisePropertyChanged("IsOffer");
                 }
@@ -525,6 +685,445 @@ namespace test1.ServiceReference1 {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Username {
+            get {
+                return this.UsernameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UsernameField, value) != true)) {
+                    this.UsernameField = value;
+                    this.RaisePropertyChanged("Username");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="user", Namespace="http://schemas.datacontract.org/2004/07/test1_service")]
+    [System.SerializableAttribute()]
+    public partial class user : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string emailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private test1.ServiceReference1.House[] houseField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string image1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string passwordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string usernameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string email {
+            get {
+                return this.emailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.emailField, value) != true)) {
+                    this.emailField = value;
+                    this.RaisePropertyChanged("email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public test1.ServiceReference1.House[] house {
+            get {
+                return this.houseField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.houseField, value) != true)) {
+                    this.houseField = value;
+                    this.RaisePropertyChanged("house");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string image1 {
+            get {
+                return this.image1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.image1Field, value) != true)) {
+                    this.image1Field = value;
+                    this.RaisePropertyChanged("image1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string password {
+            get {
+                return this.passwordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.passwordField, value) != true)) {
+                    this.passwordField = value;
+                    this.RaisePropertyChanged("password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string username {
+            get {
+                return this.usernameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.usernameField, value) != true)) {
+                    this.usernameField = value;
+                    this.RaisePropertyChanged("username");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="House", Namespace="http://schemas.datacontract.org/2004/07/test1_service")]
+    [System.SerializableAttribute()]
+    public partial class House : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string areaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int bathtubField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int bulit_yearField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string contact_noField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string image1Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string image2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string image3Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string image4Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string isofferField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int no_of_bedroomField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private float priceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int squareFtField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string stateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private test1.ServiceReference1.user userField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string usernameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string area {
+            get {
+                return this.areaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.areaField, value) != true)) {
+                    this.areaField = value;
+                    this.RaisePropertyChanged("area");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int bathtub {
+            get {
+                return this.bathtubField;
+            }
+            set {
+                if ((this.bathtubField.Equals(value) != true)) {
+                    this.bathtubField = value;
+                    this.RaisePropertyChanged("bathtub");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int bulit_year {
+            get {
+                return this.bulit_yearField;
+            }
+            set {
+                if ((this.bulit_yearField.Equals(value) != true)) {
+                    this.bulit_yearField = value;
+                    this.RaisePropertyChanged("bulit_year");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string city {
+            get {
+                return this.cityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cityField, value) != true)) {
+                    this.cityField = value;
+                    this.RaisePropertyChanged("city");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string contact_no {
+            get {
+                return this.contact_noField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.contact_noField, value) != true)) {
+                    this.contact_noField = value;
+                    this.RaisePropertyChanged("contact_no");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string image1 {
+            get {
+                return this.image1Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.image1Field, value) != true)) {
+                    this.image1Field = value;
+                    this.RaisePropertyChanged("image1");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string image2 {
+            get {
+                return this.image2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.image2Field, value) != true)) {
+                    this.image2Field = value;
+                    this.RaisePropertyChanged("image2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string image3 {
+            get {
+                return this.image3Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.image3Field, value) != true)) {
+                    this.image3Field = value;
+                    this.RaisePropertyChanged("image3");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string image4 {
+            get {
+                return this.image4Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.image4Field, value) != true)) {
+                    this.image4Field = value;
+                    this.RaisePropertyChanged("image4");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string isoffer {
+            get {
+                return this.isofferField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.isofferField, value) != true)) {
+                    this.isofferField = value;
+                    this.RaisePropertyChanged("isoffer");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string name {
+            get {
+                return this.nameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nameField, value) != true)) {
+                    this.nameField = value;
+                    this.RaisePropertyChanged("name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int no_of_bedroom {
+            get {
+                return this.no_of_bedroomField;
+            }
+            set {
+                if ((this.no_of_bedroomField.Equals(value) != true)) {
+                    this.no_of_bedroomField = value;
+                    this.RaisePropertyChanged("no_of_bedroom");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public float price {
+            get {
+                return this.priceField;
+            }
+            set {
+                if ((this.priceField.Equals(value) != true)) {
+                    this.priceField = value;
+                    this.RaisePropertyChanged("price");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int squareFt {
+            get {
+                return this.squareFtField;
+            }
+            set {
+                if ((this.squareFtField.Equals(value) != true)) {
+                    this.squareFtField = value;
+                    this.RaisePropertyChanged("squareFt");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string state {
+            get {
+                return this.stateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.stateField, value) != true)) {
+                    this.stateField = value;
+                    this.RaisePropertyChanged("state");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public test1.ServiceReference1.user user {
+            get {
+                return this.userField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.userField, value) != true)) {
+                    this.userField = value;
+                    this.RaisePropertyChanged("user");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string username {
+            get {
+                return this.usernameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.usernameField, value) != true)) {
+                    this.usernameField = value;
+                    this.RaisePropertyChanged("username");
+                }
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -538,6 +1137,12 @@ namespace test1.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
     public interface IService1 {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/agent", ReplyAction="http://tempuri.org/IService1/agentResponse")]
+        test1.ServiceReference1.AgentDetail[] agent();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/agent", ReplyAction="http://tempuri.org/IService1/agentResponse")]
+        System.Threading.Tasks.Task<test1.ServiceReference1.AgentDetail[]> agentAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/predict_value", ReplyAction="http://tempuri.org/IService1/predict_valueResponse")]
         float predict_value(test1.ServiceReference1.Details d);
@@ -556,6 +1161,42 @@ namespace test1.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/get_value", ReplyAction="http://tempuri.org/IService1/get_valueResponse")]
         System.Threading.Tasks.Task<test1.ServiceReference1.HouseDetail[]> get_valueAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/offer_value", ReplyAction="http://tempuri.org/IService1/offer_valueResponse")]
+        test1.ServiceReference1.HouseDetail[] offer_value();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/offer_value", ReplyAction="http://tempuri.org/IService1/offer_valueResponse")]
+        System.Threading.Tasks.Task<test1.ServiceReference1.HouseDetail[]> offer_valueAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/delete", ReplyAction="http://tempuri.org/IService1/deleteResponse")]
+        void delete(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/delete", ReplyAction="http://tempuri.org/IService1/deleteResponse")]
+        System.Threading.Tasks.Task deleteAsync(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/search_area", ReplyAction="http://tempuri.org/IService1/search_areaResponse")]
+        test1.ServiceReference1.HouseDetail[] search_area(string area);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/search_area", ReplyAction="http://tempuri.org/IService1/search_areaResponse")]
+        System.Threading.Tasks.Task<test1.ServiceReference1.HouseDetail[]> search_areaAsync(string area);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/add_user", ReplyAction="http://tempuri.org/IService1/add_userResponse")]
+        void add_user(test1.ServiceReference1.user u);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/add_user", ReplyAction="http://tempuri.org/IService1/add_userResponse")]
+        System.Threading.Tasks.Task add_userAsync(test1.ServiceReference1.user u);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/check_user", ReplyAction="http://tempuri.org/IService1/check_userResponse")]
+        bool check_user(string uname, string pass);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/check_user", ReplyAction="http://tempuri.org/IService1/check_userResponse")]
+        System.Threading.Tasks.Task<bool> check_userAsync(string uname, string pass);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/get_property", ReplyAction="http://tempuri.org/IService1/get_propertyResponse")]
+        test1.ServiceReference1.HouseDetail[] get_property(string uname);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/get_property", ReplyAction="http://tempuri.org/IService1/get_propertyResponse")]
+        System.Threading.Tasks.Task<test1.ServiceReference1.HouseDetail[]> get_propertyAsync(string uname);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -585,6 +1226,14 @@ namespace test1.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
+        public test1.ServiceReference1.AgentDetail[] agent() {
+            return base.Channel.agent();
+        }
+        
+        public System.Threading.Tasks.Task<test1.ServiceReference1.AgentDetail[]> agentAsync() {
+            return base.Channel.agentAsync();
+        }
+        
         public float predict_value(test1.ServiceReference1.Details d) {
             return base.Channel.predict_value(d);
         }
@@ -607,6 +1256,54 @@ namespace test1.ServiceReference1 {
         
         public System.Threading.Tasks.Task<test1.ServiceReference1.HouseDetail[]> get_valueAsync() {
             return base.Channel.get_valueAsync();
+        }
+        
+        public test1.ServiceReference1.HouseDetail[] offer_value() {
+            return base.Channel.offer_value();
+        }
+        
+        public System.Threading.Tasks.Task<test1.ServiceReference1.HouseDetail[]> offer_valueAsync() {
+            return base.Channel.offer_valueAsync();
+        }
+        
+        public void delete(string name) {
+            base.Channel.delete(name);
+        }
+        
+        public System.Threading.Tasks.Task deleteAsync(string name) {
+            return base.Channel.deleteAsync(name);
+        }
+        
+        public test1.ServiceReference1.HouseDetail[] search_area(string area) {
+            return base.Channel.search_area(area);
+        }
+        
+        public System.Threading.Tasks.Task<test1.ServiceReference1.HouseDetail[]> search_areaAsync(string area) {
+            return base.Channel.search_areaAsync(area);
+        }
+        
+        public void add_user(test1.ServiceReference1.user u) {
+            base.Channel.add_user(u);
+        }
+        
+        public System.Threading.Tasks.Task add_userAsync(test1.ServiceReference1.user u) {
+            return base.Channel.add_userAsync(u);
+        }
+        
+        public bool check_user(string uname, string pass) {
+            return base.Channel.check_user(uname, pass);
+        }
+        
+        public System.Threading.Tasks.Task<bool> check_userAsync(string uname, string pass) {
+            return base.Channel.check_userAsync(uname, pass);
+        }
+        
+        public test1.ServiceReference1.HouseDetail[] get_property(string uname) {
+            return base.Channel.get_property(uname);
+        }
+        
+        public System.Threading.Tasks.Task<test1.ServiceReference1.HouseDetail[]> get_propertyAsync(string uname) {
+            return base.Channel.get_propertyAsync(uname);
         }
     }
 }

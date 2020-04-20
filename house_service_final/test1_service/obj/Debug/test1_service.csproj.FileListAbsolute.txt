@@ -92,5 +92,4 @@ C:\Users\avina\source\repos\house_service_final\test1_service\obj\Debug\test1_se
 C:\Users\avina\source\repos\house_service_final\test1_service\obj\Debug\test1_service.pdb
 C:\Users\avina\source\repos\house_service_final\test1_service\obj\Debug\test1_service.Migrations.mg1.resources
 C:\Users\avina\source\repos\house_service_final\test1_service\obj\Debug\test1_service.csproj.GenerateResource.cache
-C:\Users\avina\source\repos\house_service_final\test1_service\obj\Debug\test1_service.Migrations.mg2.resources
-C:\Users\avina\source\repos\house_service_final\test1_service\obj\Debug\test1_service.Migrations.mg3.resources
+C:\Users\avina\source\repos\house_service_final\test1_service\obj\Debug\test1_service.Migrations.mg4.resources

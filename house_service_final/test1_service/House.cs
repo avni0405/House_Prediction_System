@@ -17,7 +17,14 @@ namespace test1_service
         public int bathtub { get; set; }
         public string contact_no { get; set; }
         public float price { get; set; }
-        public bool isoffer { get; set; }
+        public string isoffer { get; set; }
         public int bulit_year { get; set; }
+        public string username { get; set; }
+        public virtual user user { get; set; }
+        public string image1 { get; set; }
+        public string image2 { get; set; }
+        public string image3 { get; set; }
+        public string image4 { get; set; }
+
     }
 }

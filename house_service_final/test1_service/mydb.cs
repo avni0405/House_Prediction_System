@@ -13,7 +13,7 @@ namespace test1_service
         // If you wish to target a different database and/or database provider, modify the 'mydb' 
         // connection string in the application configuration file.
         public mydb()
-            : base("name=mydb")
+            : base("name=mydb1")
         {
         }
 
@@ -22,6 +22,7 @@ namespace test1_service
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
         public virtual DbSet<House> house { get; set; }
+        public virtual DbSet<user> user { get; set; }
     }
 
     //public class MyEntity

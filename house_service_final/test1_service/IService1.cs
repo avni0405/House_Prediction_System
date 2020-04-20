@@ -12,15 +12,55 @@ namespace test1_service
     [ServiceContract]
     public interface IService1
     {
-
+        [OperationContract]
+        List<AgentDetail> agent();
         [OperationContract]
         float predict_value(Details d);
         [OperationContract]
         void add_value(HouseDetail h);
         [OperationContract]
         List<HouseDetail> get_value();
+        [OperationContract]
+        List<HouseDetail> offer_value();
+       
+        [OperationContract]
+        void delete(string name);
+        [OperationContract]
+        List<HouseDetail> search_area(string area);
+        [OperationContract]
+        void add_user(user u);
+        [OperationContract]
+        bool check_user(string uname, string pass);
+        [OperationContract]
+        List<HouseDetail> get_property(string uname);
 
         // TODO: Add your service operations here
+    }
+    [DataContract]
+    public class AgentDetail
+    {
+        string username;
+        string img;
+        int count;
+        [DataMember]
+        public string Username
+        {
+            get { return username; }
+            set { username = value; }
+        }
+        [DataMember]
+        public string Image
+        {
+            get { return img; }
+            set { img = value; }
+        }
+        [DataMember]
+        public int Count
+        {
+            get { return count; }
+            set { count = value; }
+        }
+
     }
     [DataContract]
     public class HouseDetail
@@ -30,14 +70,59 @@ namespace test1_service
         string city=string.Empty;
          string area=string.Empty;
         string state;
+        string username;
         int squareFt;
        int no_of_bedroom;
-         int bath;
+        string image1;
+        string image2;
+        string image3;
+        string image4;
+        int bath;
          string contact_no;
          float price;
-         bool isoffer;
+         string isoffer=string.Empty;
          int bulit_year;
+        int id;
         string name = string.Empty;
+        [DataMember]
+        public string Image1
+        {
+            get { return image1; }
+            set { image1 = value; }
+        }
+
+        [DataMember]
+        public string Image2
+        {
+            get { return image2; }
+            set { image2 = value; }
+        }
+
+        [DataMember]
+        public string Image3
+        {
+            get { return image3; }
+            set { image3 = value; }
+        }
+
+        [DataMember]
+        public string Image4
+        {
+            get { return image4; }
+            set { image4 = value; }
+        }
+        [DataMember]
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        [DataMember]
+        public string Username
+        {
+            get { return username; }
+            set { username = value; }
+        }
         [DataMember]
         public string City
         {
@@ -93,7 +178,7 @@ namespace test1_service
             set { price = value; }
         }
         [DataMember]
-        public bool IsOffer
+        public string IsOffer
         {
             get { return isoffer; }
             set { isoffer= value; }

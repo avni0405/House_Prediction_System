@@ -7,6 +7,12 @@
       <xsd:import schemaLocation="http://localhost:57996/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/test1_service" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="IService1_agent_InputMessage">
+    <wsdl:part name="parameters" element="tns:agent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_agent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:agentResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_predict_value_InputMessage">
     <wsdl:part name="parameters" element="tns:predict_value" />
   </wsdl:message>
@@ -25,7 +31,47 @@
   <wsdl:message name="IService1_get_value_OutputMessage">
     <wsdl:part name="parameters" element="tns:get_valueResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_offer_value_InputMessage">
+    <wsdl:part name="parameters" element="tns:offer_value" />
+  </wsdl:message>
+  <wsdl:message name="IService1_offer_value_OutputMessage">
+    <wsdl:part name="parameters" element="tns:offer_valueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:delete" />
+  </wsdl:message>
+  <wsdl:message name="IService1_delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_search_area_InputMessage">
+    <wsdl:part name="parameters" element="tns:search_area" />
+  </wsdl:message>
+  <wsdl:message name="IService1_search_area_OutputMessage">
+    <wsdl:part name="parameters" element="tns:search_areaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_add_user_InputMessage">
+    <wsdl:part name="parameters" element="tns:add_user" />
+  </wsdl:message>
+  <wsdl:message name="IService1_add_user_OutputMessage">
+    <wsdl:part name="parameters" element="tns:add_userResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_check_user_InputMessage">
+    <wsdl:part name="parameters" element="tns:check_user" />
+  </wsdl:message>
+  <wsdl:message name="IService1_check_user_OutputMessage">
+    <wsdl:part name="parameters" element="tns:check_userResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_get_property_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_property" />
+  </wsdl:message>
+  <wsdl:message name="IService1_get_property_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_propertyResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
+    <wsdl:operation name="agent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/agent" message="tns:IService1_agent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/agentResponse" message="tns:IService1_agent_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="predict_value">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/predict_value" message="tns:IService1_predict_value_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/predict_valueResponse" message="tns:IService1_predict_value_OutputMessage" />
@@ -38,9 +84,42 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/get_value" message="tns:IService1_get_value_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/get_valueResponse" message="tns:IService1_get_value_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="offer_value">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/offer_value" message="tns:IService1_offer_value_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/offer_valueResponse" message="tns:IService1_offer_value_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/delete" message="tns:IService1_delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteResponse" message="tns:IService1_delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="search_area">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/search_area" message="tns:IService1_search_area_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/search_areaResponse" message="tns:IService1_search_area_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="add_user">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/add_user" message="tns:IService1_add_user_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/add_userResponse" message="tns:IService1_add_user_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="check_user">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/check_user" message="tns:IService1_check_user_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/check_userResponse" message="tns:IService1_check_user_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_property">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/get_property" message="tns:IService1_get_property_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/get_propertyResponse" message="tns:IService1_get_property_OutputMessage" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="agent">
+      <soap:operation soapAction="http://tempuri.org/IService1/agent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="predict_value">
       <soap:operation soapAction="http://tempuri.org/IService1/predict_value" style="document" />
       <wsdl:input>
@@ -61,6 +140,60 @@
     </wsdl:operation>
     <wsdl:operation name="get_value">
       <soap:operation soapAction="http://tempuri.org/IService1/get_value" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="offer_value">
+      <soap:operation soapAction="http://tempuri.org/IService1/offer_value" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/IService1/delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_area">
+      <soap:operation soapAction="http://tempuri.org/IService1/search_area" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_user">
+      <soap:operation soapAction="http://tempuri.org/IService1/add_user" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="check_user">
+      <soap:operation soapAction="http://tempuri.org/IService1/check_user" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_property">
+      <soap:operation soapAction="http://tempuri.org/IService1/get_property" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
